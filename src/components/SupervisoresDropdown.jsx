@@ -28,7 +28,7 @@ const SupervisoresDropdown = ({ supervisores, onSelect, selectedSupervisorId }) 
         onClick={handleClick}
         style={{"color":"white", "fontWeight":"white", "border": "1px solid black", "borderRadius":"5px", "padding":"5px"}}
       >
-        {selectedSupervisor ? selectedSupervisor.nombre : "Seleccione un Supervisor"}
+        {selectedSupervisor ? selectedSupervisor.nombre + "   " + "▼" : "Seleccione un Supervisor  ▼"}
       </Button>
       <Menu
         id="fade-menu"
