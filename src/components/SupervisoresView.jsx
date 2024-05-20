@@ -29,18 +29,18 @@ const SupervisoresView = () => {
   };
 
   return (
-    <section>
-      <h1 style={{"textAlign":"center"}}>Sistema de Seguimiento de Préstamos por Convenio</h1>
+    <section className='table-container'>
+      <h1 style={{"textAlign":"center", "color":"#fff"}}>Sistema de Seguimiento de Préstamos por Convenio</h1>
       {selectedSupervisor && (
         
         <TableContainer component={Paper}>
           <div>
           <div className='dropdown-container'>
-            <h2>{selectedSupervisor.nombre}</h2>
+            <h2 style={{"color":"white"}}>{selectedSupervisor.nombre}</h2>
               <SupervisoresDropdown supervisores={supervisores} onSelect={handleSelectSupervisor} selectedSupervisorId={selectedSupervisor ? selectedSupervisor.id : ''} />
             </div>
 
-            <Table sx={{ minWidth: 650 }} aria-label="simple table">
+            <Table sx={{ minWidth: 650 }} aria-label="simple table" >
               <TableHead>
                 <TableRow>
                   <TableCell align="center">Nombre</TableCell>

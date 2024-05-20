@@ -1,7 +1,7 @@
 const supervisores = [
   {
     id: 1,
-    nombre: "Supervisor 1",
+    nombre: "Marcos",
     asesores: [
       { id: 1, nombre: "Asesor 1", clientesAsignados: 50, clientesTrabajados: 30, desembolsos: 10 },
       { id: 2, nombre: "Asesor 2", clientesAsignados: 40, clientesTrabajados: 20, desembolsos: 15 },
@@ -12,7 +12,7 @@ const supervisores = [
   },
   {
     id: 2,
-    nombre: "Supervisor 2",
+    nombre: "Fernanda",
     asesores: [
       { id: 6, nombre: "Asesor 6", clientesAsignados: 45, clientesTrabajados: 35, desembolsos: 12 },
       { id: 7, nombre: "Asesor 7", clientesAsignados: 55, clientesTrabajados: 40, desembolsos: 18 },
@@ -23,7 +23,7 @@ const supervisores = [
   },
   {
     id: 3,
-    nombre: "Supervisor 3",
+    nombre: "Nicolas",
     asesores: [
       { id: 11, nombre: "Asesor 11", clientesAsignados: 40, clientesTrabajados: 25, desembolsos: 15 },
       { id: 12, nombre: "Asesor 12", clientesAsignados: 60, clientesTrabajados: 55, desembolsos: 30 },

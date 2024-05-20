@@ -26,6 +26,7 @@ const SupervisoresDropdown = ({ supervisores, onSelect, selectedSupervisorId }) 
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
+        style={{"color":"white", "fontWeight":"white", "border": "1px solid black", "borderRadius":"5px", "padding":"5px"}}
       >
         {selectedSupervisor ? selectedSupervisor.nombre : "Seleccione un Supervisor"}
       </Button>
@@ -43,7 +44,7 @@ const SupervisoresDropdown = ({ supervisores, onSelect, selectedSupervisorId }) 
           <MenuItem
             key={supervisor.id}
             onClick={() => handleClose(supervisor.id)}
-          >
+          style={{"fontSize":"14px", "fontWeight":"bold", "color":"white", "backgroundColor":"black"}}>
             {supervisor.nombre}
           </MenuItem>
         ))}
