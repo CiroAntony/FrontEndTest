@@ -31,14 +31,14 @@ const SupervisoresView = () => {
   return (
     <section>
       <h1 style={{"textAlign":"center"}}>Sistema de Seguimiento de Préstamos por Convenio</h1>
-      <div className='dropdown-container'>
+      {selectedSupervisor && (
+        
+        <TableContainer component={Paper}>
+          <div>
+          <div className='dropdown-container'>
             <h2>{selectedSupervisor.nombre}</h2>
               <SupervisoresDropdown supervisores={supervisores} onSelect={handleSelectSupervisor} selectedSupervisorId={selectedSupervisor ? selectedSupervisor.id : ''} />
             </div>
-      {selectedSupervisor && (
-        <TableContainer component={Paper}>
-          <div>
-            
 
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead>
