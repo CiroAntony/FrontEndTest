@@ -21,6 +21,10 @@ table {
     align-items: center;
 }
 
+ul {
+    padding: 0;
+}
+
 .chart {
     margin: 0 auto;
 };
